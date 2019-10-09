@@ -1,0 +1,45 @@
+REGISTRY_SERVER1: 127.0.0.1
+REGISTRY_SERVER1_PORT: 8761
+REGISTRY_SERVER2: 127.0.0.1
+REGISTRY_SERVER2_PORT: 8762
+REGISTRY_SERVER_USERNAME: user
+REGISTRY_SERVER_PASSWORD: password
+ADMIN_SERVER: 127.0.0.1
+ADMIN_SERVER_PORT: 8082
+ADMIN_SERVER_USERNAME: user
+ADMIN_SERVER_PASSWORD: password
+RABBITMQ_SERVER: 127.0.0.1
+RABBITMQ_SERVER_PORT: 5672
+RABBITMQ_SERVER_USERNAME: admin
+RABBITMQ_SERVER_PASSWORD: 123456
+ZIPKIN_SERVER: 127.0.0.1
+ZIPKIN_SERVER_PORT: 9411
+REDIS_SERVER: 127.0.0.1
+REDIS_SERVER_PORT: 6379
+REDIS_SERVER_USERNAME: admin
+REDIS_SERVER_PASSWORD:
+ROCKETMQ_SERVER: 127.0.0.1
+ROCKETMQ_SERVER_PORT: 9876
+security:
+  loginpage: http://${GATEWAY_SERVER:127.0.0.1}:${GATEWAY_SERVER_PORT:80}/busportal/login.page
+  ignoring:
+    antpatterns: '/sys/**,/buscommon/distribute.hess,/rest/**,/buscommon/**'
+  fliter:
+    hunan: false
+  authorization:
+    server:
+      address: 127.0.0.1:8015
+
+synchronous:
+  data:
+    ca:
+      province: 1500
+      year: 2017
+      po: ctjCaClientPO
+      server:
+        address: 127.0.0.1:6662
+    dic:
+      province: 1500
+      year: 2017
+      server:
+        address: 127.0.0.1:80
