@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:oracle:thin:@192.168.3.6:1521:orcl
+    url: jdbc:oracle:thin:@192.168.3.41:1521:orcl
     driver-class-name: oracle.jdbc.OracleDriver
     username: bdgudt_test
     #bdgudt_int,bdgudt_test,pay_lhc170119
