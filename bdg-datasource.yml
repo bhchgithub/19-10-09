@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:oracle:thin:@192.168.3.41:1521:orcl
     driver-class-name: oracle.jdbc.OracleDriver
-    username: C_EFMIS_TEST
+    username: C_EFMIS_INT
     #C_EFMIS_TEST   pay_lhc170119
     #java -cp druid-1.0.15.jar com.alibaba.druid.filter.config.ConfigTools 123456  使用durid的ConfigFilter对数据库密码加密
     #password: HlIkhn6qlVxaoep5si0SpXy74jCXnGQ9OpFkSmrerpXf064jeK/RvmH4fNcydFgt5kHF48Kovg1rzSsflyphCw==
